@@ -1,0 +1,52 @@
+body {
+    background: rgb(201, 200, 200);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 300ms all;
+}
+
+#pano {
+    text-align: center;
+}
+
+#panoresim {
+    width: 450px;
+    border: 2px solid rgb(238, 237, 237);
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+.isimler span {
+    color: #aa0000;
+}
+
+body.dark {
+    background-color: #222;
+    color: #eee;
+}
+
+.mode-control input {
+    position: absolute;
+    opacity: 0;
+}
+
+.mode-control span:nth-of-type(2) {
+    display: none;
+}
+
+.mode-control input:checked + span {
+    display : none ;
+}
+
+.mode-control input:checked + span + span {
+    display: inline-block;
+}
+
+.mode-control {
+    margin-left: 15px;
+}
+
+.boşluk {
+    margin-bottom: 80px;
+}
